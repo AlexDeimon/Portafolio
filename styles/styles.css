@@ -44,12 +44,14 @@ ul li{
 .buttonsNetworks{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     padding: 0;
     position: absolute;
     bottom: 10px;
     z-index: 20;
+}
+.buttonsNetworks li{
+    margin: 10px;
 }
 .wave{
     width: 100%;
@@ -85,7 +87,7 @@ ul li{
 }
 .section{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .section2{
@@ -94,34 +96,15 @@ ul li{
 .icons{
     width: 100%;
     padding: 0;
+    margin: 0;
     text-align: center;
 }
 .level{
-    position: absolute;
-    right: 0px;
-    bottom: 5px;
+    position: relative;
+    left: 0px;
     font-weight: normal;
     font-size: larger;
     color: #ff1900;
-}
-.progress{
-    position: relative;
-    height: 5px;
-    width: 400px;
-    margin: 15px;
-    background: rgb(140 55 55 / 40%);
-}
-.porcentB,
-.porcentF{
-    height: 5px;
-    background-color: #8e0e00;
-    position: absolute;
-}
-.porcentB{
-    width: 40%;
-}
-.porcentF{
-    width: 20%;
 }
 .link{
     color: #e7e7e7;
@@ -136,9 +119,6 @@ ul li{
 }
 .sobreMi div{
     position: relative;
-}
-.section div{
-    margin: auto;
 }
 .section2 div{
     position: relative;
@@ -158,8 +138,8 @@ ul li{
     position: relative;
 }
 .section figure{
-    margin: auto;
     width: 550px;
+    margin: 10px;
 }
 .section figure a{
     display: inline-block;
@@ -175,8 +155,7 @@ ul li{
 }
 @media all and (max-width: 480px){
     .header,
-    .sobreMi,
-    .section{
+    .sobreMi{
         flex-direction: column;
     }
     .progress{
