@@ -1,23 +1,24 @@
 body{
-    background-color: #1f1c18;
     margin: 0;
+    max-width: 100%;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    background-color: #1f1c18;
 }
+
 header{
+    position: relative;
     background: #8e0e00;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(31, 28, 24, 0.603), rgba(142, 14, 0, 0.61)), url("../imagenes/portada.jpg");  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(31, 28, 24, 0.603), rgba(142, 14, 0, 0.61)), url("../imagenes/portada.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: center;
     background-size: cover;
-    position: relative;
 }
-span{
-    font-weight: bold;
-}
-ul li{
-    line-height: 2;
-}
+
+span{ font-weight: bold; }
+
+ul li{ line-height: 2; }
+
 .header{
     display: flex;
     justify-content: center;
@@ -25,40 +26,42 @@ ul li{
     width: 100%;
     height: 100vh;
 }
+
 .title{
     margin-right: auto;
     text-align: center;
 }
+
 .mybutton{
     display: block;
     width: 140px;
     margin: 30px auto 0px;
     padding: 5px 1px;
-    background-color: #8e0e00;
     text-align: center;
     text-decoration: none;
     color: #e7e7e7;
+    background-color: #8e0e00;
     border-radius: 5px;
-    border: 1px solid #1f1c18;
+    border: 2px solid #1f1c18;
 }
+
 .buttonsNetworks{
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     z-index: 20;
 }
-.buttonsNetworks li{
-    margin: 10px;
-}
+
 .wave{
     width: 100%;
     position: absolute;
     bottom: 0px;
     z-index: 10;
 }
+
 .sobreMi,
 .section2{
     margin: 15px auto;
@@ -70,35 +73,44 @@ ul li{
     border-radius: 15px;
     box-shadow: 0px 5px 25px 0px rgb(255 255 255 / 40%);
 }
-.sobreMi{
-    width: 90%;
-}
+
+.sobreMi{ width: 90%; }
+
 .box-section{
     box-sizing: border-box;
     padding: 0px 25px ;
 }
+
 .lista1{
     list-style-type: none;
     padding-left: 0;
 }
+
 .title-section{
     margin-top: 40px;
     text-align: center;
 }
+
 .section{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.section2{
-    flex-direction: column;
+
+.section2{ 
+    flex-direction: column; 
+    width: 300px;
 }
+
 .icons{
     width: 100%;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .level{
     position: relative;
     left: 0px;
@@ -106,81 +118,88 @@ ul li{
     font-size: larger;
     color: #ff1900;
 }
-.link{
-    color: #e7e7e7;
-}
+
+.link{ color: #e7e7e7; }
+
 .section3{
-    height: 150px;
+    height: 90px;
+    margin-top: 10px;
     position: relative;
-}
-.buttonsNetworks li,
-.icons li{
-    display: inline;
-}
-.sobreMi div{
-    position: relative;
-}
-.section2 div{
-    position: relative;
-}
-.section div h2{
-    text-align: center;
-}
-[class*=" imghvr-"], [class^=imghvr-] {
+    display: flex;
+    align-items: center;
     background-color: #5a0a02;
 }
-[class*=" imghvr-"] figcaption,
-[class^=imghvr-] figcaption {
-    background-color: #8e0e00;
-}
-[class*=" imghvr-"] a,
-[class^=imghvr-] a{
-    position: relative;
-}
-.section figure{
-    width: 550px;
-    margin: 10px;
-}
-.section figure a{
-    display: inline-block;
-}
-.section figure h3{
-    margin-top: 0px;
-}
-.mybutton:hover{
-    background-color: #ff1900;
-}
-.section figure .mybutton{
-    margin-top: 0px;
-}
+
+[class*=" imghvr-"], [class^=imghvr-] { background-color: #5a0a02; }
+
 @media all and (max-width: 480px){
     .header,
     .sobreMi{
         flex-direction: column;
     }
-    .progress{
-        max-width: 250px;
-    }
-    .section2{
-        max-width: 250px;
-    }
+
+    .header{height: 90vh;}
+
+    .progress{ max-width: 250px; }
+
+    .section2{ max-width: 250px; }
+
     .section figure{
         max-width: 90%;
+        flex-direction: row;
         font-size: x-small;
-        flex-direction: row;
     }
-    figure .section{
-        flex-direction: row;
-    }
-    figure .mybutton{
-        width: 100px;
-    }
+
+    figure .section{ flex-direction: row; }
+
+    figure .mybutton{ width: 100px; }
 }
+
+.buttonsNetworks li{ margin: 10px; }
+
+.buttonsNetworks li,
+.icons li{
+    display: inline;
+}
+
+.sobreMi div{ position: relative; }
+
+.section2 div{ position: relative; }
+
+[class*=" imghvr-"] figcaption,
+[class^=imghvr-] figcaption {
+    background-color: #8e0e00;
+}
+
+[class*=" imghvr-"] a,
+[class^=imghvr-] a{
+    position: relative;
+}
+
+.section figure{
+    width: 550px;
+    margin: 10px;
+}
+
+.section div h2{ text-align: center; }
+
+.section figure a{ display: inline-block; }
+
+.section figure h3{ margin-top: 0px; }
+
+.section3 .buttonsNetworks{ position: static; }
+
+.mybutton:hover{ background-color: #ff1900; }
+
+.section3 .buttonsNetworks li{ margin-bottom: 0px; }
+
+.section figure .mybutton{ margin-top: 0px; }
+
 #foto{
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    height: 290px;
+    height: 300px;
     width: auto;
-    border-radius: 50%;
+    clip-path: circle(42% at 50% 40%);
 }
