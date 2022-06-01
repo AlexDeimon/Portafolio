@@ -33,10 +33,12 @@ ul li{ line-height: 2; }
 }
 
 .mybutton{
-    display: block;
-    width: 140px;
+    display: flex;
+    width: 170px;
     margin: 30px auto 0px;
     padding: 5px 1px;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
     text-decoration: none;
     color: #e7e7e7;
@@ -95,6 +97,10 @@ ul li{ line-height: 2; }
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.section1{
+    gap: 10px;
 }
 
 .section2{ 
@@ -186,8 +192,6 @@ ul li{ line-height: 2; }
 }
 
 .section div h2{ text-align: center; }
-
-.section figure a{ display: inline-block; }
 
 .section figure h3{ margin-top: 0px; }
 
