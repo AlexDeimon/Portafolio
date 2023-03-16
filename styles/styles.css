@@ -136,34 +136,14 @@ ul li{ line-height: 2; }
     background-color: #5a0a02;
 }
 
-[class*=" imghvr-"], [class^=imghvr-] { background-color: #5a0a02; }
-
-@media all and (max-width: 480px){
-    .header,
-    .sobreMi{
-        flex-direction: column;
-    }
-
-    .header{height: 90vh;}
-
-    .progress{ max-width: 250px; }
-
-    .section2{ max-width: 250px; }
-
-    .section figure{
-        max-width: 90%;
-        flex-direction: row;
-        font-size: x-small;
-    }
-
-    .section figure figcaption {
-        padding: 1%;
-    }
-
-    figure .section{ flex-direction: row; }
-
-    figure .mybutton{ width: 100px; }
+.projects{
+    display: flex;
+    width: 93%;
+    height: 450px;
+    margin: auto;
 }
+
+[class*=" imghvr-"], [class^=imghvr-] { background-color: #5a0a02; }
 
 .buttonsNetworks li{ margin: 10px; }
 
@@ -179,16 +159,47 @@ ul li{ line-height: 2; }
 [class*=" imghvr-"] figcaption,
 [class^=imghvr-] figcaption {
     background-color: #8e0e00;
+    padding: 0 18px;
 }
 
 [class*=" imghvr-"] a,
 [class^=imghvr-] a{
     position: relative;
+    margin-top: 10px;
 }
 
-.section figure{
-    width: 550px;
-    margin: 10px;
+.projects figure{
+    width: 0;
+    flex-grow: 1;
+    transition: .5s ease;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+}
+
+@media all and (max-width: 480px){
+    .header,
+    .sobreMi{
+        flex-direction: column;
+    }
+
+    .header{height: 90vh;}
+
+    .progress{ max-width: 250px; }
+
+    .section2{ max-width: 250px; }
+
+    .projects figure{
+        font-size: small;
+        clip-path: none;
+    }
+
+    figure .section{ flex-direction: row; }
+
+    figure .mybutton{ width: 100px; }
+}
+
+.projects figure img{
+    height: 100%;
+    object-fit: cover;
 }
 
 .section div h2{ text-align: center; }
@@ -203,11 +214,29 @@ ul li{ line-height: 2; }
 
 .section figure .mybutton{ margin-top: 0px; }
 
+.projects figure:hover{
+    width: 370px;
+    object-fit: fill;
+    clip-path: none;
+    z-index: 20;
+    box-shadow: 0px 5px 25px 0px rgba(255, 255, 255, 80%);
+}
+
+.projects figure:nth-last-child(-n + 4){
+    margin-left: -5%;
+}
+
 #foto{
     margin-left: auto;
     margin-right: auto;
     position: relative;
     height: 300px;
     width: auto;
-    clip-path: circle(42% at 50% 40%);
+    clip-path: circle(43% at 50% 44%);
+}
+
+#iconvue{
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
 }
