@@ -117,13 +117,7 @@ ul li{ line-height: 2; }
     justify-content: space-around;
 }
 
-.level{
-    position: relative;
-    left: 0px;
-    font-weight: normal;
-    font-size: larger;
-    color: #ff1900;
-}
+.icon{ height: 80px; }
 
 .link{ color: #e7e7e7; }
 
@@ -183,6 +177,11 @@ ul li{ line-height: 2; }
 
     .header{height: 90vh;}
 
+    .title {
+        position: relative;
+        top: -50px;
+    }
+
     .progress{ max-width: 250px; }
 
     .section2{ max-width: 250px; }
@@ -237,6 +236,6 @@ ul li{ line-height: 2; }
 
 #iconvue{
     position: absolute;
-    bottom: 10%;
-    right: 35%;
+    bottom: 35%;
+    right: 3%;
 }
