@@ -8,10 +8,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alexdeimon.github.io/Portafolio/index.html" />
     <meta property="og:image" content="https://programaenlinea.net/wp-content/uploads/2018/08/sitio-web.jpg" />
-    <meta property="og:description" content="Nuevo Portafolio maquetado sin boostrap. Se utilizaron algunas herramientas adicionales como: https://uigradients.com/#Mirage , https://animate.style/ & http://www.imagehover.io/" />
+    <meta property="og:description" content="Nuevo Portafolio maquetado sin boostrap. Se utilizaron algunas herramientas adicionales como: https://uigradients.com/#Mirage , https://animate.style/, http://www.imagehover.io/ & https://swiperjs.com/" />
     <title>Diego Sandoval</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,167 +25,190 @@
 <body>
     <header>
         <div class="header">
-            <img src="imagenes/Diego.jpg" alt="foto" id="foto" class="animate__animated animate__heartBeat animate__delay-1s">
+            <img src="imagenes/Diego.webp" alt="foto" id="foto" class="animate__animated animate__heartBeat animate__delay-1s">
             <div class="title animate__animated animate__flip ">
                 <h1>&lt; Diego Sandoval /&gt;</h1>
                 <h2>Web Designer | Junior Developer</h2>
-                <a href="H.V Diego Alejandro Sandoval Fernández.pdf" download class="mybutton" title="Hoja de vida">Descargar CV</a>
+                <a href="HV Diego Alejandro Sandoval Fernandez.pdf" download class="mybutton" title="Hoja de vida">Descargar CV</a>
             </div>
         </div> 
+        <br><br>
         <ul class="buttonsNetworks">
             <li><a href="https://www.linkedin.com/in/diego-alejandro-sandoval-fernández/" target="_blank" title="Linkedin"><img src="https://img.icons8.com/ios-filled/60/ffffff/linkedin.png" alt="icono Linkedin"/></a></li>
             <li><a href="https://github.com/AlexDeimon" target="_blank" title="Github"><img src="https://img.icons8.com/material-outlined/60/ffffff/github.png" alt="icono github"/></a></li>
-            <li><a href="mailto:diegoalejandro1999@gmail.com?subject=contacto&body=enviar mensaje" target="_blank" title="Enviar mail"><img src="https://img.icons8.com/ios-filled/60/ffffff/email.png" alt="icono gmail"/></a></li>
+            <li><a href="mailto:diegoalejandro1999@gmail.com?subject=contacto&body=enviar mensaje" target="_blank" title="Enviar mail"><img src="https://img.icons8.com/?size=65&id=jicLxt1sA2qa&format=png&color=ffffff" alt="icono gmail"/></a></li>
         </ul>
         <div class="wave" style="height: 120px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-7.05,64.64 C182.56,151.48 409.99,-60.67 509.87,75.50 L499.72,155.44 L0.00,150.00 Z" style="stroke: none; fill: #1f1c18;"></path></svg></div>
     </header>
+    <br>
     <main>
         <section class="sobreMi">
-            <div class="box-section">
+            <article class="box-section">
                 <h2>Sobre mi</h2>
-                <p>Soy estudiante de ingeniería de sistemas de la Universidad Libre de Colombia.</p>
-                <p>Soy un web designer y programador junior, me agrada el desarrollo web, tengo más experiencia en lado del Frontend que del Backend pero en ambos he trabajado. Mi intención es aprender, adquirir experiencia para mejorar, llegar a ser desarrollador web fullstack senior y aportar en lo que pueda con mis conocimientos y habilidades. Soy autodidacta y trabajo en proyectos de desarrollo propios y en equipo, siempre aprendiendo más cada día. También me interesa el tema de la seguridad de la información.</p>
-            </div>
-            <div class="box-section">
-                <h2>Información básica</h2>
-                <ul class="lista1">
-                    <li><span>Edad:</span> 23</li>
-                    <li><span>Email:</span> diegoalejandro1999@gmail.com</li>
-                    <li><span>Teléfono:</span> +57 3134473607</li>
-                </ul>
-            </div>
-            <div class="box-section">
+                <p>Desarrollador web con más de un año de experiencia en el sector bancario, con un enfoque integral en el desarrollo de soluciones backend y frontend. He trabajado en proyectos complejos aplicando buenas prácticas, desarrollando y monitoreando sistemas robustos alineados a los estándares y requerimientos del sector. También he adquirido experiencia en servicios en la nube, específicamente en AWS. Soy autodidacta, enfocado en el aprendizaje continuo y en el trabajo en equipo e individual. Mi objetivo es seguir creciendo, llegar a ser desarrollador Fullstack senior y aportar con mis conocimientos y habilidades en cada proyecto.</p>
+            </article>
+            <article class="box-section">
+                <h2>Educación: </h2>
+                <dl>
+                    <dt><span>Banco AV Villas: </span></dt>
+                    <dd>Fundamentos de Programación para Sistemas de Información Bancaria 2023</dd>
+                    <dt><span>Universidad Nacional de Colombia: </span></dt>
+                    <dd>Programa de Conocimiento Académico en Habilidades de Programación Misión Tic 2022</dd>
+                    <dt><span>Universidad Libre de Colombia: </span></dt>
+                    <dd>Ingeniería de Sistemas 2018 - 2024</dd>
+                </dl>
+            </article>
+            <article class="box-section">
                 <h2>Conocimientos: </h2>
                 <ul>
                     <li>Ingeniería</li>
                     <li>Bases de datos</li>
                     <li>Desarrollo de software</li>
+                    <li>Computación en la nube</li>
                     <li>Metodología SCRUM</li>
                     <li>Ingles A2</li>
                 </ul>    
-            </div>
-            <div class="box-section">
+            </article>
+            <article class="box-section">
                 <h2>Áreas de interés: </h2>
                 <ul>
-                    <li>Desarrollo de software</li>
                     <li>Maquetación y programación web</li>
-                    <li>Redes sociales</li>
                     <li>Seguridad de la información</li>
+                    <li>Servicios AWS</li>
                 </ul>
-            </div>
+            </article>
         </section>
         <h2 class="title-section">Habilidades técnicas</h2>
         <section class="section">
-            <div>
+            <article>
                 <h2>Frontend</h2>
-                <div class="section2">
+                <section class="section2">
                     <div>
                         <ul class="icons">
                             <li><img src="https://img.icons8.com/color/80/000000/html-5--v1.png" alt="icono HTML"/></li>
                             <li><img src="https://img.icons8.com/color/80/000000/css3.png" alt="icono CSS"/></li>
-                            <li><img src="https://img.icons8.com/?size=80&id=108784&format=png" alt="icono javascript"/></li>
+                            <li><img src="https://img.icons8.com/?size=80&id=108784&format=png" alt="icono Javascript"/></li>
                             <li><img src="https://alexdeimon.github.io/Apuntes/assets/images/Bootstrap.webp" class="icon" alt="icono Boostrap"/></li>
                             <li><img src="https://img.icons8.com/color/80/000000/vue-js.png" alt="icono Vue"/></li>
-                            <li><img src="https://img.icons8.com/color/80/ionic.png" alt="icono graphql"/><img src="https://img.icons8.com/color/40/000000/vue-js.png" alt="icono Vue" id="iconvue"/></li>
+                            <li><img src="https://img.icons8.com/color/80/ionic.png" alt="icono Ionic"/><img src="https://img.icons8.com/color/40/000000/vue-js.png" alt="icono Vue" id="iconvue"/></li>
                             <li><img src="https://img.icons8.com/?size=80&id=uJM6fQYqDaZK&format=png" alt="icono TypeScript"></li>
                             <li><img src="https://img.icons8.com/?size=80&id=1BC75jFEBED6&format=png" alt="icono .NET"></li>
                         </ul>
                     </div>
-                </div>     
-            </div>
-            <div>
+                </section>     
+            </article>
+            <article>
                 <h2>Backend</h2>
-                <div class="section2">
+                <section class="section2">
                     <div>
                         <ul class="icons">
-                            <li><img src="https://img.icons8.com/color/80/000000/python--v1.png" alt="icono python"/></li>
+                            <li><img src="https://img.icons8.com/?size=80&id=bqGAqsgNQpmx&format=png&color=000000" alt="icono Node"></li>
                             <li><img src="https://img.icons8.com/color/80/000000/java-coffee-cup-logo--v1.png" alt="icono Java"/></li>
-                            <li><img src="https://img.icons8.com/fluent/80/000000/mysql-logo.png" alt="icono Mysql"/></li>
-                            <li><img src="https://img.icons8.com/color/80/000000/postgreesql.png" alt="icono postgreesql"></li>
-                            <li><img src="https://img.icons8.com/color/80/000000/mongodb.png" alt="icono mongodb"/></li>
-                            <li><img src="https://img.icons8.com/color/80/firebase.png" alt="icono firebase"></li>
-                            <li><img src="https://img.icons8.com/?size=80&id=laYYF3dV0Iew&format=png" alt="icono sql server"></li>
+                            <li><img src="https://img.icons8.com/color/80/000000/python--v1.png" alt="icono Python"/></li>
                             <li><img src="https://static.javatpoint.com/tutorial/cobol/images/cobol-tutorial.png" class="icon" alt="icono cobol"></li>
+                            <li><img src="https://img.icons8.com/fluent/80/000000/mysql-logo.png" alt="icono Mysql"/></li>
+                            <li><img src="https://img.icons8.com/color/80/000000/postgreesql.png" alt="icono Postgreesql"></li>
+                            <li><img src="https://img.icons8.com/?size=80&id=laYYF3dV0Iew&format=png" alt="icono SQL Server"></li>
+                            <li><img src="https://img.icons8.com/color/80/000000/mongodb.png" alt="icono Mongodb"/></li>
+                            <li><img src="https://img.icons8.com/color/80/firebase.png" alt="icono Firebase"></li>
                         </ul>    
                     </div>
-                </div>    
-            </div>
+                </section>    
+            </article>
         </section>
-        <h2 class="title-section">Proyectos</h2>
-        <section class="projects">
-            <figure class="imghvr-fade">
-                <img src="imagenes/Apuntes.png" alt="Apuntes">
-                <figcaption>
-                    <h3>SITIO WEB DE APUNTES</h3>
-                    <h4>DICIEMBRE 2021 - PRESENTE</h4>
-                    <p>Sitio web para dejar apuntes de clases y practicas de herramientas de programación y desarrollo web, desarrollado en HTML y CSS con intención de practicar frontend, desde lo más básico e ir avanzando.</p>
-                    <p><span class="resaltado">Herramientas terminadas:</span> HTML, CSS, JavaScript y Bootstrap.</p>
-                    <p><span class="resaltado">Herramienta actual estudiando:</span> TypeScript</p>
-                    <section class="section">
-                        <a href="https://alexdeimon.github.io/Apuntes/index.html" class="mybutton" target="_blank">Sitio</a>
-                        <a href="https://github.com/AlexDeimon/Apuntes" class="mybutton" target="_blank">Github</a>    
-                    </section>
-                </figcaption>
-            </figure>    
-            <figure class="imghvr-fade">
-                <img src="imagenes/Gamezone.png" alt="Gamezone">
-                <figcaption>
-                    <h3>GAME ZONE</h3>
-                    <h4>Versión 1: FEBRERO 2021 - JULIO 2021</h4>
-                    <h4>Versión 2: ABRIL 2022 - MAYO 2022</h4>
-                    <p>Aplicación web de E-commerce de una tienda de video juegos junto con un sistema de gestión de inventario. Se desarrolló en el framework Springboot junto con mongoDB en el lado del Backend y el framework Vue.js junto con Bootstrap 4 y Firebase para el lado del frontend.</p>
-                    <section class="section">
-                        <a href="https://gamezone-e-comemerce.web.app" class="mybutton" target="_blank">App</a>
-                        <a href="https://github.com/AlexDeimon/E_Commerce_GameZone_Frontend" class="mybutton" target="_blank">Github Frontend E-commerce</a>
-                        <a href="https://github.com/AlexDeimon/GameZone_MS_Frontend" class="mybutton" target="_blank">Github Frontend Sistema de gestión</a>
-                        <a href="https://github.com/AlexDeimon/E_commerce_Backend" class="mybutton" target="_blank">Github Backend</a>    
-                    </section>
-                </figcaption>
-            </figure>
-            <figure class="imghvr-fade">
-                <img src="imagenes/Ejercicios.png" alt="Ejercicios web">
-                <figcaption>
-                    <h3>EJERCICIOS PROGRAMACIÓN WEB</h3>
-                    <h4>FEBRERO 2022 - MARZO 2022</h4>
-                    <p>Sitio web para guardar y acceder ejercicios de programación web en HTML, CSS, JavaScript, Vue, Firebase entre otras tecnologías realizados durante periodo universitario de ingeniería de sistemas octavo semestre 2022-1.</p>
-                    <section class="section">
-                        <a href="https://alexdeimon.github.io/repositorio_06/" class="mybutton" target="_blank">Sitio</a>
-                        <a href="https://github.com/AlexDeimon/repositorio_06" class="mybutton" target="_blank">Github</a>    
-                    </section>
-                </figcaption>
-            </figure>
-            <figure class="imghvr-fade">
-                <img src="imagenes/Ejercicios2.png" alt="Ejercicios móvil">
-                <figcaption>
-                    <h3>EJERCICIOS PROGRAMACIÓN MÓVIL</h3>
-                    <h4>FEBRERO 2023 - MAYO 2023</h4>
-                    <p>Ejercicios de Programación Móvil desarrollados con Ionic Framework y Vue entre otras tecnologías. Periodo universitario de ingeniería de sistemas décimo semestre 2023-1</p>
-                    <section class="section">
-                        <a href="https://alexdeimon.github.io/repositorio_07/" class="mybutton" target="_blank">Sitio</a>
-                        <a href="https://github.com/AlexDeimon/repositorio_07" class="mybutton" target="_blank">Github</a>    
-                    </section>
-                </figcaption>
-            </figure>
-            <figure class="imghvr-fade">
-                <img src="imagenes/Presupuesto.png" alt="Presupuesto">
-                <figcaption>
-                    <h3>APLICACIÓN PRESUPUESTO</h3>
-                    <h4>JULIO 2022 </h4>
-                    <p>Proyecto de Aplicación de presupuesto basado en Proyecto final de curso universidad de desarrollo web frontend de Global Mentoring</p>
-                    <section class="section">
-                        <a href="https://alexdeimon.github.io/Presupuesto" class="mybutton" target="_blank">App</a>
-                        <a href="https://github.com/AlexDeimon/Presupuesto" class="mybutton" target="_blank">Github</a>    
-                    </section>
-                </figcaption>
-            </figure>
+        <section class="section swiper mySwiper">
+            <h2 class="title-section">Proyectos</h2>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <figure class="imghvr-flip-horiz" id="figure1">
+                        <img src="imagenes/Apuntes.webp" alt="Apuntes">
+                        <figcaption>
+                            <h3>SITIO WEB DE APUNTES</h3>
+                            <h4>DICIEMBRE 2021 - PRESENTE</h4>
+                            <p>Sitio web para dejar apuntes de clases y practicas de herramientas de programación y desarrollo web, desarrollado en HTML y CSS con intención de practicar frontend, desde lo más básico e ir avanzando.</p>
+                            <p><span>Herramientas terminadas:</span> HTML, CSS, JavaScript, Bootstrap y TypeScript</p>
+                            <p><span>Herramienta actual estudiando:</span> Node.js</p>
+                            <section class="section section1">
+                                <a href="https://alexdeimon.github.io/Apuntes/index.html" class="mybutton" target="_blank">Sitio</a>
+                                <a href="https://github.com/AlexDeimon/Apuntes" class="mybutton" target="_blank">Github</a>    
+                            </section>
+                        </figcaption>
+                    </figure>  
+                </article>
+                <article class="swiper-slide">  
+                    <figure class="imghvr-flip-horiz" id="figure2">
+                        <img src="imagenes/Gamezone.webp" alt="Gamezone">
+                        <figcaption>
+                            <h3>GAME ZONE Sistema de Gestión</h3>
+                            <h4>Versión 3: AGOSTO 2024 - NOVIEMBRE 2024</h4>
+                            <p>Sistema de gestión de inventarios para una tienda de video juegos desarrollado en Node.js, Vue y Bootstrap. Tarda un tiempo en cargar el backend, subido a Render.</p>
+                            <p>Versión 1: FEBRERO 2021 - JULIO 2021</p>
+                            <p>Versión 2: ABRIL 2022 - MAYO 2022</p>
+                            <section class="section section1">
+                                <a href="https://gamezone-e-comemerce.web.app" class="mybutton" target="_blank">App</a>
+                                <a href="https://github.com/AlexDeimon/GameZone_MS_Frontend" class="mybutton" target="_blank">Github Frontend</a>
+                                <a href="https://github.com/AlexDeimon/E_commerce_Backend_2" class="mybutton" target="_blank">Github Backend 2 (Node)</a>
+                                <a href="https://github.com/AlexDeimon/E_commerce_Backend" class="mybutton" target="_blank">Github Backend 1 (SpringBoot)</a>
+                            </section>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="swiper-slide">
+                    <figure class="imghvr-flip-horiz" id="figure3">
+                        <img src="imagenes/Ejercicios.webp" alt="Ejercicios web">
+                        <figcaption>
+                            <h3>EJERCICIOS PROGRAMACIÓN WEB</h3>
+                            <h4>FEBRERO 2022 - MARZO 2022</h4>
+                            <p>Sitio web para guardar y acceder ejercicios de programación web en HTML, CSS, JavaScript, Vue, Firebase entre otras tecnologías realizados durante periodo universitario de ingeniería de sistemas octavo semestre 2022-1.</p>
+                            <section class="section section1">
+                                <a href="https://alexdeimon.github.io/repositorio_06/" class="mybutton" target="_blank">Sitio</a>
+                                <a href="https://github.com/AlexDeimon/repositorio_06" class="mybutton" target="_blank">Github</a>    
+                            </section>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="swiper-slide">
+                    <figure class="imghvr-flip-horiz" id="figure4">
+                        <img src="imagenes/Ejercicios2.webp" alt="Ejercicios móvil">
+                        <figcaption>
+                            <h3>EJERCICIOS PROGRAMACIÓN MÓVIL</h3>
+                            <h4>FEBRERO 2023 - MAYO 2023</h4>
+                            <p>Ejercicios de Programación Móvil desarrollados con Ionic Framework y Vue entre otras tecnologías. Periodo universitario de ingeniería de sistemas décimo semestre 2023-1</p>
+                            <section class="section section1">
+                                <a href="https://alexdeimon.github.io/repositorio_07/" class="mybutton" target="_blank">Sitio</a>
+                                <a href="https://github.com/AlexDeimon/repositorio_07" class="mybutton" target="_blank">Github</a>    
+                            </section>
+                        </figcaption>
+                    </figure>   
+                </article>
+                <article class="swiper-slide">
+                    <figure class="imghvr-flip-horiz" id="figure5">
+                        <img src="imagenes/Presupuesto.webp" alt="Presupuesto">
+                        <figcaption>
+                            <h3>APLICACIÓN PRESUPUESTO</h3>
+                            <h4>JULIO 2022 </h4>
+                            <p>Proyecto de Aplicación de presupuesto basado en Proyecto final de curso universidad de desarrollo web frontend de Global Mentoring</p>
+                            <section class="section section1">
+                                <a href="https://alexdeimon.github.io/Presupuesto" class="mybutton" target="_blank">App</a>
+                                <a href="https://github.com/AlexDeimon/Presupuesto" class="mybutton" target="_blank">Github</a>    
+                            </section>
+                        </figcaption>
+                    </figure>    
+                </article>        
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </section>
         <section class="section3">
             <ul class="buttonsNetworks">
                 <li><a href="https://www.linkedin.com/in/diego-alejandro-sandoval-fernández/" target="_blank" title="Linkedin"><img src="https://img.icons8.com/ios-filled/60/ffffff/linkedin.png" alt="icono Linkedin"/></a></li>
                 <li><a href="https://github.com/AlexDeimon" target="_blank" title="Github"><img src="https://img.icons8.com/material-outlined/60/ffffff/github.png" alt="icono github"/></a></li>
-                <li><a href="mailto:diegoalejandro1999@gmail.com?subject=contacto&body=enviar mensaje" target="_blank" title="Enviar mail"><img src="https://img.icons8.com/ios-filled/60/ffffff/email.png" alt="icono gmail"/></a></li>
+                <li><a href="mailto:diegoalejandro1999@gmail.com?subject=contacto&body=enviar mensaje" target="_blank" title="Enviar mail"><img src="https://img.icons8.com/?size=65&id=jicLxt1sA2qa&format=png&color=ffffff" alt="icono gmail"/></a></li>
             </ul>
         </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts/scripts.js"></script>
 </html>
